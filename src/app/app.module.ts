@@ -25,7 +25,8 @@ import { PhilosophersComponent } from './philosophers/philosophers.component';
       { path: '', component: HomeComponent },
       { path: 'about', component: AboutComponent },
       { path: 'contact', component: ContactComponent },
-      { path: 'philosophers', component: PhilosophersComponent}
+      { path: 'philosophers', component: PhilosophersComponent},
+      {path: 'home', component: HomeComponent}
     ])
   ],
   providers: [

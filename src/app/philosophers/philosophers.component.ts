@@ -8,26 +8,27 @@ import { Component } from '@angular/core';
 export class PhilosophersComponent {
   isOpen = false;
 
-  toggleDropdown() {
-    this.isOpen = !this.isOpen;
-  }
 
-  selectOption(option: string) {
-    if (option === 'Cổ điển') {
-      this.basic();
-    } else if (option === 'Semophore') {
-      this.usingSemophore();
-    }
-    this.isOpen = false; // Đóng dropdown sau khi chọn
-  }
+toggleDropdown() {
+  this.isOpen = !this.isOpen;
+}
 
-  basic() {
-    console.log('Hello');
+selectOption(option: string) {
+  if (option === 'Cổ điển') {
+    this.basic();
+  } else if (option === 'Semophore') {
+    this.usingSemophore();
   }
+  this.isOpen = false; // Đóng dropdown sau khi chọn
+}
 
-  usingSemophore() {
-    for (let i = 1; i <= 10; i++) {
-      console.log(i);
-    }
+basic() {
+  console.log('Hello');
+}
+
+usingSemophore() {
+  for (let i = 1; i <= 10; i++) {
+    console.log(i);
   }
+}
 }
