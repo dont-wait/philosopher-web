@@ -1,0 +1,36 @@
+.button-container {
+    position: absolute; /* Đặt vị trí cho container */
+    top: 50px; /* Khoảng cách từ trên cùng */
+    right: 10px; /* Khoảng cách từ bên phải */
+  }
+  
+  button {
+    background-color: #444; /* Màu nền cho button */
+    color: white; /* Màu chữ cho button */
+    border: none; /* Bỏ viền */
+    padding: 10px 20px; /* Khoảng cách bên trong button */
+    cursor: pointer; /* Con trỏ khi hover */
+  }
+  
+  button:hover {
+    background-color: #555; /* Màu nền khi hover */
+  }
+  
+  .dropdown {
+    border: 1px solid #ccc; /* Màu viền cho dropdown */
+    background-color: #222; /* Màu nền cho dropdown */
+    position: absolute;
+    margin-top: 5px;
+    width: 100px; /* Chiều rộng dropdown */
+  }
+  
+  .dropdown div {
+    padding: 10px;
+    color: white; /* Màu chữ cho lựa chọn */
+    cursor: pointer;
+  }
+  
+  .dropdown div:hover {
+    background-color: #444; /* Màu nền khi hover trên lựa chọn */
+  }
+  

@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 0;
+    background-color: #2c2c2c; /* Nền tối chính */
+    color: #f9f9f9; /* Màu chữ sáng */
+}
+h1, h2 {
+    color: #ffffff; /* Màu chữ trắng cho tiêu đề */
+    text-align: center; /* Căn giữa tiêu đề */
+    margin-top: 57px;
+}
+.content {
+    background: #3a3a3a; /* Nền tối cho nội dung */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5); /* Đổ bóng cho nội dung */
+    margin: 0 auto; /* Căn giữa nội dung */
+    max-width: 800px; /* Giới hạn chiều rộng tối đa */
+}
+p {
+    text-align: justify; /* Căn chỉnh văn bản đều hai bên */
+    margin-bottom: 15px; /* Khoảng cách giữa các đoạn */
+}
+ul {
+    padding-left: 20px; /* Thụt vào cho danh sách */
+}
+li {
+    color: #e0e0e0; /* Màu chữ sáng cho các mục trong danh sách */
+}
+img {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử chứa */
+    height: auto; /* Giữ tỷ lệ khung hình của hình ảnh */
+    margin: 20px 0; /* Tạo khoảng cách trên và dưới hình ảnh */
+    border-radius: 8px; /* Bo tròn góc của hình ảnh */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Đổ bóng nhẹ để tạo chiều sâu */
+    display: block; /* Căn giữa hình ảnh */
+    margin-left: auto; /* Căn giữa hình ảnh */
+    margin-right: auto; /* Căn giữa hình ảnh */
+}

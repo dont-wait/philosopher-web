@@ -1,0 +1,38 @@
+.navbar {
+  position: fixed; /* Cố định thanh navbar */
+  top: 0; /* Căn trên cùng */
+  left: 0; /* Căn trái */
+  right: 0; /* Căn phải */
+  background-color: rgba(0, 0, 0, .5); /* Màu nền cho navbar */
+  color: white; /* Màu chữ */
+  z-index: 1000; /* Đảm bảo navbar luôn hiển thị trên các phần tử khác */
+  /* box-shadow: 0px 5px 6px #ffffff45; */
+  filter: drop-shadow(5px 5px 30px grey);
+}
+
+.navbar ul {
+  list-style-type: none; /* Bỏ dấu chấm trước mục */
+  display: flex; /* Hiển thị mục theo hàng */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar li {
+ flex: 2;
+}
+
+.navbar a {
+  display: block;
+  color: white; /* Màu chữ của liên kết */
+  text-decoration: none; /* Bỏ gạch chân */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+  width: 100%; 
+  padding: 10px 0;
+  text-align: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Màu nền khi hover */
+}

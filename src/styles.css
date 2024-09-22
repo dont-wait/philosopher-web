@@ -1,0 +1,38 @@
+body {
+    background-color: #000; /* Màu nền đen */
+    color: white; /* Màu chữ trắng để dễ đọc */
+    margin: 0; /* Xóa margin mặc định */
+    font-family: Arial, sans-serif; /* Font chữ */
+}
+
+.home {
+    height: calc(100vh - 60px); /* Giả sử navbar cao khoảng 60px */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #1e1f28; /* Màu nền mặc định */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Đảm bảo nội dung nằm trên lớp nền */
+    padding: 20px;
+}
+
+.button {
+    background-color: #444; /* Nền tối cho button */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Hiệu ứng bóng */
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-2px); /* Hiệu ứng nhấc lên khi hover */
+}
+* {padding: 0; margin: 0; box-sizing: border-box;}

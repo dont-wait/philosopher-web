@@ -1,0 +1,10 @@
+<div class="button-container">
+    <button (click)="toggleDropdown()">
+      Lựa chọn
+    </button>
+    <div *ngIf="isOpen" class="dropdown">
+      <div (click)="selectOption('Cổ điển')">Cổ điển</div>
+      <div (click)="selectOption('Semophore')">Semophore</div>
+    </div>
+  </div>
+  

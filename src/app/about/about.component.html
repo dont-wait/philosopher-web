@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Toán Bữa Ăn Tối Của Triết Gia</title>
+    <link rel="stylesheet" href="about.component.css"> <!-- Liên kết đến tệp CSS -->
+</head>
+<body>
+    <div class="content">
+        <h1>Giới thiệu</h1>
+        <p>Bài toán "Bữa ăn tối của các triết gia" được đưa ra bởi Dijkstra là một bài toán kinh điển về đồng bộ hóa trong môi trường đa luồng và minh họa các kỹ thuật để giải quyết chúng.</p>
+        
+        <h2>Mô tả vấn đề</h2>
+        <p>Có năm nhà triết gia, vừa suy nghĩ vừa ăn tối. Các triết gia ngồi trên một bàn tròn, trước mặt họ là đĩa thức ăn, mỗi người một đĩa. Có năm chiếc đũa được đặt xen kẽ giữa các triết gia.</p>
+        <img src="https://images.viblo.asia/53f49792-0384-4910-8279-9ffb5243e024.png" alt="">
+        <p>Mỗi triết gia dành thời gian để suy nghĩ hoặc ăn khi đói. Triết gia chỉ có thể ăn khi có được 2 chiếc đũa bên cạnh mình (triết gia nằm giữa 2 chiếc đũa trái và phải). Một triết gia chỉ có thể lấy một chiếc đũa tại một thời điểm và không được lấy chiếc đũa đang được dùng bởi người kế bên. Triết gia chỉ ăn khi đủ 2 chiếc đũa. Sau khi ăn xong, triết gia đặt đũa xuống và tiếp tục suy nghĩ.</p>
+        
+        <h2>Yêu cầu bài toán</h2>
+        <ul>
+            <li>Tiến trình: Số triết gia trên bàn ăn</li>
+            <li>Hành động: ăn, suy nghĩ</li>
+            <li>Tài nguyên cần: Mỗi triết gia cần 2 chiếc đũa</li>
+            <li>Tắc nghẽn: Các triết gia phải đợi lẫn nhau dẫn đến không ai được ăn</li>
+            <li>Đói: Một triết gia có thể chết đói nếu ông ta không có cách nào ăn được</li>
+        </ul>
+        
+        <h2>Giải pháp</h2>
+        <p>Phải đặt ra thuật toán sao cho khi một triết gia bị đói thì ông ta sẽ được ăn và đảm bảo không có triết gia nào bị chết đói. Thuật toán được đưa ra là thuật toán Semaphore.</p>
+        <p>Ngôn ngữ thực hiện thuật toán: Java, C/C++</p>
+    </div>
+</body>
+</html>
