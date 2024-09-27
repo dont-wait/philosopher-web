@@ -6,10 +6,8 @@
     justify-content: center;
     color: white;
     text-align: center;
-    background-color: #1e1f28; /* Màu nền đen mặc định */
-    background-size: cover; /* Đảm bảo hình nền bao phủ toàn bộ */
-    background-position: center; /* Căn giữa hình nền */
-    background-repeat: no-repeat; /* Không lặp lại hình nền */
+    background-repeat: no-repeat;/* Màu nền đen mặc định */
+    background-size: cover;
 }
 
 .content {

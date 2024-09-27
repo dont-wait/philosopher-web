@@ -1,11 +1,81 @@
-<div class="button-container">
-    <button (click)="toggleDropdown()">
-      Lựa chọn
-    </button>
-    <div *ngIf="isOpen" class="dropdown">
-      <div (click)="selectOption('Cổ điển')">Cổ điển</div>
-      <div (click)="selectOption('Semophore')">Semophore</div>
+<div class="table-wrap">
+  <div class="table">
+    <!-- Corrected plate-wrap structure -->
+    <div class="plate-wrap" style="--idx: 0">
+      <div class="plate">1</div>
+    </div>
+
+    <div class="plate-wrap" style="--idx: 1">
+      <div class="plate">2</div> <!-- Removed misplaced text -->
+    </div>
+
+    <div class="plate-wrap" style="--idx: 2">
+      <div class="plate">3</div>
+    </div>
+
+    <div class="plate-wrap" style="--idx: 3">
+      <div class="plate">4</div>
+    </div>
+
+    <div class="plate-wrap" style="--idx: 4">
+      <div class="plate">5</div>
     </div>
   </div>
+
+  <div class="state-promt">
+    <div class="panel">
+      <!-- State 1 -->
+      <div class="state">
+        <div class="state-image"></div>
+        <div class="state-infos">
+          <div class="state-id">
+            <h3>No.1</h3>
+          </div>
+          <div class="state-type">
+            <span> State: thinking</span>
+          </div>
+          <div class="state-time">
+            <span>Time: 10 seconds</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- State 2 (Repeated structure) -->
+      <div class="state">
+        <div class="state-image"></div>
+        <div class="state-infos">
+          <div class="state-id">
+            <h3>No.1</h3>
+          </div>
+          <div class="state-type">
+            <span> State: thinking</span>
+          </div>
+          <div class="state-time">
+            <span>Time: 10 seconds</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dropdown Button -->
+  <div class="button-container">
+    <button (click)="toggleDropdown()">Lựa chọn</button>
+    <div *ngIf="isOpen" class="dropdown">
+      <div (click)="selectOption('Classic')">Classic</div>
+      <div (click)="selectOption('Semaphore')">Semaphore</div>
+    </div>
+  </div>
+<!-- Code Container -->
+<div class="code-container" id="code-container">
+  <ng-container *ngIf="selectionOption === 'Classic'; else semaphoreTemplate">
+    <pre (click)="removeActive()"><code>{{ code }}</code></pre>
+  </ng-container>
   
-  
+    <ng-template #semaphoreTemplate>
+      <div *ngIf="selectionOption === 'Semaphore'">
+        <pre (click)="removeActive()"><code>{{ code }}</code></pre>
+      </div>
+    </ng-template>
+    </div>
+    </div>

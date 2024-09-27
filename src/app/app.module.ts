@@ -11,12 +11,12 @@ import { ContactComponent } from './contact/contact.component';
 import { PhilosophersComponent } from './philosophers/philosophers.component';
 @NgModule({
   declarations: [
-    AppComponent,  
+    AppComponent,
     HomeComponent,
     NavbarComponent,
     AboutComponent,
     ContactComponent,
-    PhilosophersComponent
+    PhilosophersComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,8 +25,8 @@ import { PhilosophersComponent } from './philosophers/philosophers.component';
       { path: '', component: HomeComponent },
       { path: 'about', component: AboutComponent },
       { path: 'contact', component: ContactComponent },
-      { path: 'philosophers', component: PhilosophersComponent},
-      {path: 'home', component: HomeComponent}
+      { path: 'philosophers', component: PhilosophersComponent },
+      { path: 'home', component: HomeComponent },
     ])
   ],
   providers: [
