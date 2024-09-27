@@ -1,8 +1,9 @@
-body {
-    background-color: #000; /* Màu nền đen */
+body, html {
+    background-color: #472c05e0; /* Màu nền đen */
     color: white; /* Màu chữ trắng để dễ đọc */
     margin: 0; /* Xóa margin mặc định */
     font-family: Arial, sans-serif; /* Font chữ */
+    height: 100%;
 }
 
 .home {

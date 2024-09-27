@@ -1,20 +1,36 @@
 .button-container {
-    position: absolute; /* Đặt vị trí cho container */
-    top: 50px; /* Khoảng cách từ trên cùng */
-    right: 10px; /* Khoảng cách từ bên phải */
-  }
-  
-  button {
-    background-color: #444; /* Màu nền cho button */
-    color: white; /* Màu chữ cho button */
-    border: none; /* Bỏ viền */
-    padding: 10px 20px; /* Khoảng cách bên trong button */
-    cursor: pointer; /* Con trỏ khi hover */
-  }
-  
-  button:hover {
-    background-color: #555; /* Màu nền khi hover */
-  }
+  position: absolute; /* Đặt vị trí cho container */
+  top: 50px; /* Khoảng cách từ trên cùng */
+  left: 10px; /* Khoảng cách từ bên phải */
+}
+
+button {
+  background-color: #444; /* Màu nền cho button */
+  color: white; /* Màu chữ cho button */
+  border: none; /* Bỏ viền */
+  padding: 12px 25px; /* Khoảng cách bên trong button */
+  cursor: pointer; /* Con trỏ khi hover */
+  border-radius: 5px; /* Bo tròn góc */
+  font-size: 16px; /* Kích thước chữ */
+  transition: background-color 0.3s, transform 0.2s; /* Hiệu ứng chuyển tiếp */
+}
+
+/* Hiệu ứng hover */
+button:hover {
+  background-color: #666; /* Màu nền khi hover */
+  transform: translateY(-2px); /* Nâng nút lên khi hover */
+}
+
+/* Hiệu ứng focus */
+button:focus {
+  outline: none; /* Bỏ viền khi nút được focus */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Hiệu ứng bóng khi focus */
+}
+
+/* Hiệu ứng nhấn */
+button:active {
+  transform: translateY(0); /* Đưa nút về vị trí ban đầu khi nhấn */
+}
   
   .dropdown {
     border: 1px solid #ccc; /* Màu viền cho dropdown */
@@ -34,7 +50,6 @@
     background-color: #444; /* Màu nền khi hover trên lựa chọn */
   }
   
-  /* Phân bố triết gia đ��u xung quanh bàn */
   
   .table-wrap {
     display: flex;
@@ -74,7 +89,7 @@
     height: 27%;
     border-radius: 50%;
     object-fit: cover;
-    background: #1edeb499;
+    background: #69750278;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,20 +136,27 @@
     overflow: hidden;
     display: flex;
     font-size: 1.3em;
-    padding: 6px;
+    padding: 15px;
     margin: 20px 0;
     border-radius: 10px;
     border: 2px solid #ffff;
   }
 
   .state-image {
-    background: url("../../assets/images/philosopher1.jpg");
     flex: 1;
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    margin-top: 25px;
+  }
+  .state-image img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     border-radius: 10px;
     border: 2px solid #fff;
+    height: auto;
   }
 
   .state-infos {
@@ -144,6 +166,7 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    color: black;
   }
 
 .code-container {
@@ -167,6 +190,10 @@
   z-index: 1000;
   padding: 80px;
   font-size: 1.5em;
+  scroll-behavior: smooth;
+  will-change: scroll-position;
+  transform: translateZ(0); /* Tăng cường hiệu suất */
+  backface-visibility: hidden;
 }
 
 @keyframes fade {

@@ -24,37 +24,21 @@
 
   <div class="state-promt">
     <div class="panel">
-      <!-- State 1 -->
-      <div class="state">
-        <div class="state-image"></div>
+      <div class="state" *ngFor="let philosopher of philosophers">
+        <div class="state-image">
+          <img [src]="philosopher.image" alt="Philosopher {{ philosopher.id }}">
+        </div>
         <div class="state-infos">
           <div class="state-id">
-            <h3>No.1</h3>
+            <h3>No.{{ philosopher.id }}</h3>
           </div>
           <div class="state-type">
-            <span> State: thinking</span>
+            <span>State: {{ philosopher.state }}</span>
           </div>
           <div class="state-time">
-            <span>Time: 10 seconds</span>
-          </div>
-        </div>
-      </div>
+            <span>Time: {{ philosopher.time }}</span>
+            </div>
 
-      <!-- State 2 (Repeated structure) -->
-      <div class="state">
-        <div class="state-image"></div>
-        <div class="state-infos">
-          <div class="state-id">
-            <h3>No.1</h3>
-          </div>
-          <div class="state-type">
-            <span> State: thinking</span>
-          </div>
-          <div class="state-time">
-            <span>Time: 10 seconds</span>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 
